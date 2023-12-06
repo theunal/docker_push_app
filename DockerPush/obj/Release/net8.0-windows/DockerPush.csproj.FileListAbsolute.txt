@@ -1,0 +1,16 @@
+C:\Users\UNAL\Desktop\DockerPush\DockerPush\bin\Release\net8.0-windows\DockerPush.exe
+C:\Users\UNAL\Desktop\DockerPush\DockerPush\bin\Release\net8.0-windows\DockerPush.deps.json
+C:\Users\UNAL\Desktop\DockerPush\DockerPush\bin\Release\net8.0-windows\DockerPush.runtimeconfig.json
+C:\Users\UNAL\Desktop\DockerPush\DockerPush\bin\Release\net8.0-windows\DockerPush.dll
+C:\Users\UNAL\Desktop\DockerPush\DockerPush\bin\Release\net8.0-windows\DockerPush.pdb
+C:\Users\UNAL\Desktop\DockerPush\DockerPush\obj\Release\net8.0-windows\DockerPush.Form1.resources
+C:\Users\UNAL\Desktop\DockerPush\DockerPush\obj\Release\net8.0-windows\DockerPush.csproj.GenerateResource.cache
+C:\Users\UNAL\Desktop\DockerPush\DockerPush\obj\Release\net8.0-windows\DockerPush.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\UNAL\Desktop\DockerPush\DockerPush\obj\Release\net8.0-windows\DockerPush.AssemblyInfoInputs.cache
+C:\Users\UNAL\Desktop\DockerPush\DockerPush\obj\Release\net8.0-windows\DockerPush.AssemblyInfo.cs
+C:\Users\UNAL\Desktop\DockerPush\DockerPush\obj\Release\net8.0-windows\DockerPush.csproj.CoreCompileInputs.cache
+C:\Users\UNAL\Desktop\DockerPush\DockerPush\obj\Release\net8.0-windows\DockerPush.dll
+C:\Users\UNAL\Desktop\DockerPush\DockerPush\obj\Release\net8.0-windows\refint\DockerPush.dll
+C:\Users\UNAL\Desktop\DockerPush\DockerPush\obj\Release\net8.0-windows\DockerPush.pdb
+C:\Users\UNAL\Desktop\DockerPush\DockerPush\obj\Release\net8.0-windows\DockerPush.genruntimeconfig.cache
+C:\Users\UNAL\Desktop\DockerPush\DockerPush\obj\Release\net8.0-windows\ref\DockerPush.dll
