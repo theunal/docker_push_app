@@ -10,9 +10,9 @@ namespace DockerPush
             Text = "pushla hacý";
         }
 
-        private async void btn_Click(object sender, EventArgs e)
+        private void btn_Click(object sender, EventArgs e)
         {
-            var image_names = image_txt.Text.Split(" ").Select(x => x.Trim());
+            var image_names = image_txt.Text.Split(" ").Select(x => x.Trim()).Where(x => string.IsNullOrEmpty(x) is false);
 
             foreach (var image_name in image_names)
             {
@@ -21,9 +21,14 @@ namespace DockerPush
 
                 list_box.Items.Add(image_name);
 
-                await ExecuteCommand("docker", $"tag {image_name} {location}");
-                await ExecuteCommand("docker", $"push {location}");
+                _ = ExecuteCommands(image_name, location);
             }
+        }
+
+        private async Task ExecuteCommands(string image_name, string location)
+        {
+            await ExecuteCommand("docker", $"tag {image_name} {location}");
+            await ExecuteCommand("docker", $"push {location}");
         }
 
         Task ExecuteCommand(string command, string arguments)
