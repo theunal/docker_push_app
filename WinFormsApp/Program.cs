@@ -1,4 +1,4 @@
-namespace DockerPush
+namespace WinFormsApp
 {
     internal static class Program
     {

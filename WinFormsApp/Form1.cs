@@ -1,13 +1,13 @@
 using System.Diagnostics;
 
-namespace DockerPush
+namespace WinFormsApp
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
-            Text = "pushla hacý";
+            Text = "Docker Push";
         }
 
         private void btn_Click(object sender, EventArgs e)
@@ -33,18 +33,18 @@ namespace DockerPush
 
         Task ExecuteCommand(string command, string arguments)
         {
-            var process = new Process();
-            var startInfo = new ProcessStartInfo
+            var process = new Process()
             {
-                FileName = command,
-                Arguments = arguments,
-                RedirectStandardOutput = true,
-                RedirectStandardError = true,
-                UseShellExecute = false,
-                CreateNoWindow = true
+                StartInfo = new ProcessStartInfo
+                {
+                    FileName = command,
+                    Arguments = arguments,
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                }
             };
-
-            process.StartInfo = startInfo;
 
             process.OutputDataReceived += (sender, e) =>
             {
@@ -66,7 +66,7 @@ namespace DockerPush
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
 
-            return Task.Run(() => process.WaitForExit());
+            return Task.Run(process.WaitForExit);
         }
 
         private void button2_Click(object sender, EventArgs e)
