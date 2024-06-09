@@ -7,7 +7,7 @@ namespace WinFormsApp
         public Form1()
         {
             InitializeComponent();
-            Text = "Docker Push";
+            Text = "Docker Push v9";
         }
 
         private void btn_Click(object sender, EventArgs e)
@@ -29,6 +29,8 @@ namespace WinFormsApp
         {
             await ExecuteCommand("docker", $"tag {image_name} {location}");
             await ExecuteCommand("docker", $"push {location}");
+            await ExecuteCommand("docker", $"rmi {location}");
+            list_box.Items.Add($"PUSHED => {image_name}");
         }
 
         Task ExecuteCommand(string command, string arguments)
